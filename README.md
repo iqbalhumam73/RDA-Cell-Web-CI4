@@ -2,7 +2,8 @@ Prototype/rancangan aplikasi :
 https://www.figma.com/file/dZHc7oQVznyGULag8uVPQm/Untitled?node-id=0%3A1
 
 Use Case:
-pembeli :
+
+Pembeli :
 - bisa lihat daftar produk/iklan
 - bisa lihat detail dari iklan
 - bisa beli produk di iklan
@@ -12,7 +13,7 @@ pembeli :
 - bisa edit data akun
 - bisa lihat history transaksi
 
-admin
+admin :
 - bisa login
 - bisa menambah produk
 - bisa mengganti detail produk
