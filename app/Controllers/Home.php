@@ -8,4 +8,16 @@ class Home extends BaseController
 	{
 		return view('welcome_message');
 	}
+	public function etalase()
+	{
+		return view('etalase');
+	}
+	public function transaksi()
+	{
+		return view('transaksi');
+	}
+	public function akunsaya()
+	{
+		return view('akunsaya');
+	}
 }
