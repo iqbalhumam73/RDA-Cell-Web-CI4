@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::etalase');
 $routes->get('/transaksi', 'Home::transaksi');
 $routes->get('/akunsaya', 'Home::akunsaya');
+$routes->get('/pesanan', 'Home::pesanan');
+$routes->get('/tambahproduk', 'Home::tambahproduk');
 
 /*
  * --------------------------------------------------------------------

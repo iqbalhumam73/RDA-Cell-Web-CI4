@@ -20,4 +20,12 @@ class Home extends BaseController
 	{
 		return view('akunsaya');
 	}
+	public function pesanan()
+	{
+		return view('pesanan');
+	}
+	public function tambahproduk()
+	{
+		return view('tambahproduk');
+	}
 }
