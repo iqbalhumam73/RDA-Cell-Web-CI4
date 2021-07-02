@@ -6,10 +6,17 @@ Atau bisa dicoba di :
 
 https://www.figma.com/proto/dZHc7oQVznyGULag8uVPQm/Untitled?node-id=5%3A558&scaling=min-zoom&page-id=0%3A1
 
+Requirement :
+Komponen Toko Online
+- Membuat Halaman Utama Toko Online
+- Register dan Login Member
+- Order Member
+- Logout Session
+- Halaman Admin - Produk
+- Halaman Admin - Invoice
 
 
 Use Case:
-
 Pembeli :
 - bisa lihat daftar produk/iklan
 - bisa lihat detail dari iklan
