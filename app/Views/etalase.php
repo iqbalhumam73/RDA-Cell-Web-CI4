@@ -19,62 +19,21 @@ RHA Cell - Etalase
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
             </div> -->
         <div class="row icon-boxes">
-            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box"><a href="/testbuttonbox">
-                        <img src="/phoneimg/xiaomi.jpg" alt="" class="fotoiklan">
-                        <h3>Rp2.100.000</h3>
-                        <h4 class="title">Iphone 5s</h4>
-                        <p class="description">Dijamin Ori, kondisi mulus 90% </p>
-                        <a href="/beliproduk" class="btn-iklan">Beli</a>
-                        <!-- <a href="/detailproduk" class="btn btn-warning">Detail</a> -->
-                    </a>
+            <?php foreach ($produk as $produk) : ?>
+                <div class="col-sm-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box"><a href="/testbuttonbox">
+                            <img src="<?php echo base_url('.public/phoneimg/' . $produk->produk_foto); ?>" alt="ndak onok">
+                            <img src="/phoneimg/<?= $produk['produk_foto']; ?>" alt="tidak ada" class="fotoiklan">
+                            <img src="/phoneimg/foto2.jpg" alt="tidak ada" class="fotoiklan">
+                            <h3><?= $produk['produk_harga']; ?></h3>
+                            <h4 class="title"><?= $produk['produk_nama']; ?></h4>
+                            <p class="description"><?= $produk['produk_deskripsi']; ?></p>
+                            <a href="/beliproduk" class="btn-iklan">Beli</a>
+                            <!-- <a href="/detailproduk" class="btn btn-warning">Detail</a> -->
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box"><a href="/testbuttonbox">
-                        <img src="/phoneimg/xiaomi.jpg" alt="" class="fotoiklan">
-                        <h3>Rp2.100.000</h3>
-                        <h4 class="title">Iphone 5s</h4>
-                        <p class="description">Dijamin Ori, kondisi mulus 90% </p>
-                        <a href="/beliproduk" class="btn-iklan">Beli</a>
-                        <!-- <a href="/detailproduk" class="btn btn-warning">Detail</a> -->
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box"><a href="/testbuttonbox">
-                        <img src="/phoneimg/xiaomi.jpg" alt="" class="fotoiklan">
-                        <h3>Rp2.100.000</h3>
-                        <h4 class="title">Iphone 5s</h4>
-                        <p class="description">Dijamin Ori, kondisi mulus 90% </p>
-                        <a href="/beliproduk" class="btn-iklan">Beli</a>
-                        <!-- <a href="/detailproduk" class="btn btn-warning">Detail</a> -->
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box"><a href="/testbuttonbox">
-                        <img src="/phoneimg/xiaomi.jpg" alt="" class="fotoiklan">
-                        <h3>Rp2.100.000</h3>
-                        <h4 class="title">Iphone 5s</h4>
-                        <p class="description">Dijamin Ori, kondisi mulus 90% </p>
-                        <a href="/beliproduk" class="btn-iklan">Beli</a>
-                        <!-- <a href="/detailproduk" class="btn btn-warning">Detail</a> -->
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box"><a href="/testbuttonbox">
-                        <img src="/phoneimg/xiaomi.jpg" alt="" class="fotoiklan">
-                        <h3>Rp2.100.000</h3>
-                        <h4 class="title">Iphone 5s</h4>
-                        <p class="description">Dijamin Ori, kondisi mulus 90% </p>
-                        <a href="/beliproduk" class="btn-iklan">Beli</a>
-                        <!-- <a href="/detailproduk" class="btn btn-warning">Detail</a> -->
-                    </a>
-                </div>
-            </div>
-
+            <?php endforeach ?>
         </div>
 </section><!-- End Hero -->
 <?= $this->endsection(); ?>
